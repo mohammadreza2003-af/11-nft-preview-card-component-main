@@ -13,6 +13,8 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  gap: 64px;
   align-items: center;
   justify-content: center;
 }
@@ -26,10 +28,53 @@ body {
   padding: 18px;
   background-color: hsl(216, 50%, 16%);
 }
-.nft-img {
-  align-self: center;
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
   height: 256px;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
   border-radius: 12px;
+}
+.for-view {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  width: 256px;
+}
+.for-view:hover {
+  opacity: 1;
+}
+.view {
+  height: 32px;
+  width: 32px;
+  opacity: 1;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.img-box:hover {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(178, 100%, 50%, 0.5),
+      hsla(178, 100%, 50%, 0.5)
+    ),
+    url(images/image-equilibrium.jpg), url(images/icon-view.svg);
+}
+.nft-img {
+  border-radius: 12px;
+  height: 256px;
 }
 .head-text-box {
   display: flex;
