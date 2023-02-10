@@ -84,6 +84,9 @@ body {
 .head-text {
   font-size: 18px;
 }
+.head-text:hover {
+  color: hsl(178, 100%, 50%);
+}
 .dis-text {
   color: hsl(215, 51%, 70%);
 }
