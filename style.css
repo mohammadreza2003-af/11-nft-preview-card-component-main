@@ -5,6 +5,8 @@
 }
 body {
   background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
 }
 .con {
   max-width: 1440px;
@@ -38,7 +40,7 @@ body {
   font-size: 18px;
 }
 .dis-text {
-  font-size: 14px;
+  color: hsl(215, 51%, 70%);
 }
 .avatar-img {
   border-radius: 50%;
@@ -49,4 +51,23 @@ body {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+.vol {
+  display: flex;
+  justify-content: space-between;
+}
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+.time {
+  color: hsl(215, 51%, 70%);
+}
+.dis-f-color {
+  margin-right: 2px;
+  letter-spacing: 0.5px;
+  color: hsl(215, 51%, 70%);
+}
+.line {
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
 }
