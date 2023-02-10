@@ -5,16 +5,35 @@
 }
 body {
   background-color: hsl(217, 54%, 11%);
-  font-size: 18px;
 }
 .con {
   max-width: 1440px;
   min-height: 100vh;
 }
+.box-f {
+  padding: 96px 512px;
+}
 .box {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px;
   background-color: hsl(216, 50%, 16%);
 }
 .nft-img {
-  height: 256px;
+  align-self: center;
+  height: 300px;
   border-radius: 12px;
+}
+.head-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.head-text {
+  font-size: 18px;
+}
+.dis-text {
+  font-size: 14px;
 }
