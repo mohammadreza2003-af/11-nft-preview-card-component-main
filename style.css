@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  min-height: 100vh;
   background-color: hsl(217, 54%, 11%);
   color: hsl(0, 0%, 100%);
   font-size: 14px;
@@ -12,7 +13,7 @@ body {
 .con {
   position: relative;
   max-width: 1440px;
-  min-height: 100vh;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
