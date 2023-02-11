@@ -49,6 +49,7 @@ body {
 }
 
 .box {
+  animation: moveintop 0.6s ease-in;
   width: 290px;
   border-radius: 12px;
   display: flex;
@@ -69,6 +70,11 @@ body {
   background-position: center;
   align-self: center;
   border-radius: 12px;
+
+  overflow: hidden;
+}
+.img-box:hover {
+  background-image: url(images/image-equilibrium.jpg);
 }
 .for-view {
   opacity: 0;
@@ -77,8 +83,11 @@ body {
   align-items: center;
   height: 256px;
   width: 256px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .for-view:hover {
+  transform: scale(0.9);
   opacity: 1;
 }
 .view {
@@ -114,6 +123,7 @@ body {
 .head-text {
   font-size: 18px;
   font-weight: 600;
+  transition: all 0.3s;
 }
 .head-text:hover {
   color: hsl(178, 100%, 50%);
@@ -124,6 +134,7 @@ body {
 .dis-text {
   color: hsl(215, 51%, 70%);
   font-weight: 300;
+  transition: all 0.3s;
 }
 .avatar-img {
   border-radius: 50%;
@@ -140,20 +151,37 @@ body {
   justify-content: space-between;
 }
 .eth {
+  transition: all 0.3s;
   color: hsl(178, 100%, 50%);
   font-weight: 400;
 }
 .time {
+  transition: all 0.3s;
   color: hsl(215, 51%, 70%);
   font-weight: 400;
 }
 .dis-f-color {
+  transition: all 0.3s;
   margin-right: 2px;
   letter-spacing: 0.5px;
   color: hsl(215, 51%, 70%);
   font-weight: 400;
 }
 .line {
+  transition: all 0.3s;
   height: 1px;
   background-color: hsl(215, 32%, 27%);
+}
+
+/* Anim*/
+@keyframes moveintop {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
